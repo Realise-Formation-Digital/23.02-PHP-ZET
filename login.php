@@ -22,6 +22,10 @@ if(!empty($_POST))
     }
 }
 
+$password = '123456';
+$hash = crypt($password, '$1$rasmusle$');
+echo $hash;
+
 require './header.php';
 ?>
 <?php if($messageError): ?>
