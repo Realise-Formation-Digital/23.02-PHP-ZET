@@ -1,6 +1,7 @@
 <?php 
 $name = $password = $messageError = $result = "";
 $success = true;
+$hash = '$1$rasmusle$0GYWlU.VOlg2Kw0dULQZb1';
 
 if(!empty($_POST))
 {
@@ -8,23 +9,24 @@ if(!empty($_POST))
     $password = $_POST['password'];
     if(empty($name))
     {
-        $messageError = "Vous devez rentrer un message";
+        $messageError = "Vous devez rentrer un nom ou un mot de passe";
         $success = false;
     }
     if(empty($password))
     {
-        $messageError = "Vous devez rentrer un message";
+        $messageError = "Vous devez rentrer un nom ou un mot de passe";
         $success = false;
     }
     if($success)
     {
-        $result = $name . " " . $password;
+        if (password_verify($password, $hash)) {
+            $result = 'mot de passe valid';
+        } else {
+            $result = 'Le mot de passe est invalide.';
+        }
     }
 }
 
-$password = '123456';
-$hash = crypt($password, '$1$rasmusle$');
-echo $hash;
 
 require './header.php';
 ?>
