@@ -1,1 +1,2 @@
-# 23.02-PHP-ZET
+# 23.02-JS-Projet-Zet
+Projet Zet with JAvascript
