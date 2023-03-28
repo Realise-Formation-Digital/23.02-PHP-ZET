@@ -1,5 +1,34 @@
-<?php require './header.php'; ?>
+<?php 
+$name = $password = $messageError = $result = "";
+$success = true;
 
+if(!empty($_POST))
+{
+    $name = $_POST['name'];
+    $password = $_POST['password'];
+    if(empty($name))
+    {
+        $messageError = "Vous devez rentrer un message";
+        $success = false;
+    }
+    if(empty($password))
+    {
+        $messageError = "Vous devez rentrer un message";
+        $success = false;
+    }
+    if($success)
+    {
+        $result = $name . " " . $password;
+    }
+}
+
+require './header.php';
+?>
+<?php if($messageError): ?>
+    <div class="alert alert-danger text-center">
+        <?= $messageError ?>
+    </div>
+<?php endif; ?>
 <div class="container-sm mx-auto my-2">
     <form action="login.php" method="post">
         <div class="mb-3">
@@ -13,5 +42,10 @@
         <button type="submit" class="btn btn-primary mx-auto">soumettre</button>
     </form>
 </div>
+<?php if($result): ?>
+    <div class="alert alert-success text-center">
+        <?= $result ?>
+    </div>
+<?php endif; ?>
 
 <?php require './footer.php'; ?>
