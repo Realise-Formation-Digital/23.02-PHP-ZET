@@ -19,11 +19,14 @@ if(!empty($_POST))
     if($success)
     {
         if (($handle = fopen("user.csv", "r")) !== FALSE) {
-            while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) 
+            while (($data = fgetcsv($handle, null, ";")) !== FALSE) 
             {
-                if (password_verify($password, $data[1])) {
+                if (password_verify($password, $data[1]) && $name === $data[0]) {
                     $passwordError = "mot de passe valid $data[0]";
-                } else {
+                    break;
+                } 
+                else 
+                {
                     $passwordError = 'L utilisateur ou le mot de passe est invalide.';
                 }
             }
