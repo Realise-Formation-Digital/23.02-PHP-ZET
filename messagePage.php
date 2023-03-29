@@ -2,16 +2,12 @@
 session_start();
 
 $handle = fopen("message.csv", "r");
-
-while (($data = fgetcsv($handle, null,";"))!== FALSE) {
-    var_dump($data);
-}
+$lignes = file("message.csv");
+var_dump($lignes);
 
 require 'header.php'; 
 ?>
-<?php while(($data = fgetcsv($handle, null,";"))!== FALSE): ?>
-    <p><?= $data ?></p><p><?= $data[1] ?></p><p><?= $data[2] ?></p>
-<?php endwhile; ?>
-
-
+<?php foreach($lignes as $l): ?>
+    <p><?= $l ?></p>
+<?php endforeach; ?>
 <?php require 'footer.php'; ?>
