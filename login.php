@@ -20,12 +20,6 @@ require './header.php';
         <button type="submit" class="btn btn-primary mx-auto">soumettre</button>
     </form>
 </div>
-<?php if($result): ?>
-    <div class="alert alert-success text-center">
-        <?= $result ?>
-    </div>
-<?php endif; ?>
-
 <?php if($passwordError): ?>
     <div class="alert alert-primary text-center">
         <?= $passwordError ?>
