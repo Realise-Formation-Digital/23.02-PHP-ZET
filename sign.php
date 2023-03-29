@@ -38,6 +38,8 @@ if(!empty($_POST))
      }
 }
 
+
+require 'header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -69,5 +71,4 @@ if(!empty($_POST))
 
 
 
-</body>
-</html>
+<?php require './footer.php'; ?>
