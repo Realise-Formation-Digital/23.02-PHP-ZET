@@ -25,7 +25,8 @@ if(!empty($_POST))
                 if (password_verify($password, $data[1]) && $name === $data[0]) 
                 {
                     $_SESSION['name'] = $name;
-                    
+                    header('Location: messagePage.php');
+                    exit;
                     break;
                 } 
                 else 
