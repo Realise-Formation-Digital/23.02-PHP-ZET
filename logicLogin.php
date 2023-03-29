@@ -25,7 +25,7 @@ if(!empty($_POST))
                 if (password_verify($password, $data[1]) && $name === $data[0]) 
                 {
                     $_SESSION['name'] = $name;
-                    var_dump($_SESSION);
+                    
                     break;
                 } 
                 else 

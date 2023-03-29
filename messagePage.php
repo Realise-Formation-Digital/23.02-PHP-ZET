@@ -1,3 +1,8 @@
-<?php require 'header.php'; ?>
+<?php
+session_start();
+require 'header.php'; 
+?>
+
+
 
 <?php require 'footer.php'; ?>
