@@ -53,7 +53,7 @@
               <a href="#services" class="text-white">Connexion</a>
             </div>
             <div class="fs-4">
-              <a href="#services" class="text-white">Inscription</a>
+              <a href="sign.php" class="text-white">Inscription</a>
             </div>
             <div class="fs-4">
               <a href="#services" class="text-white">Services</a>
