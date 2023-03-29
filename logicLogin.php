@@ -1,4 +1,5 @@
 <?php
+session_start();
 $name = $password = $passwordError = $messageError = $result = "";
 
 if(!empty($_POST))
@@ -21,8 +22,10 @@ if(!empty($_POST))
         if (($handle = fopen("user.csv", "r")) !== FALSE) {
             while (($data = fgetcsv($handle, null, ";")) !== FALSE) 
             {
-                if (password_verify($password, $data[1]) && $name === $data[0]) {
-                    $passwordError = "mot de passe valid $data[0]";
+                if (password_verify($password, $data[1]) && $name === $data[0]) 
+                {
+                    $_SESSION['name'] = $name;
+                    var_dump($_SESSION);
                     break;
                 } 
                 else 

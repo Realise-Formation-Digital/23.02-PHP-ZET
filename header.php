@@ -50,12 +50,6 @@
         <div class="collapse" id="navbar">
           <div class="p-4">
             <div class="fs-4">
-              <a href="#services" class="text-white">Connexion</a>
-            </div>
-            <div class="fs-4">
-              <a href="sign.php" class="text-white">Inscription</a>
-            </div>
-            <div class="fs-4">
               <a href="#services" class="text-white">Services</a>
             </div>
             <div class="fs-4">
@@ -75,6 +69,9 @@
             </div>
             <div class="fs-4">
               <a href="login.php" class="text-white">Login</a>
+            </div>
+            <div class="fs-4">
+              <a href="sign.php" class="text-white">Inscription</a>
             </div>
           </div>
         </div>
