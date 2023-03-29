@@ -5,6 +5,7 @@ require_once 'logicContact.php';
 
  require 'header.php';
 ?>
+<!-- pierwszy formularz ze strony -->
 
 <!-- <div id="contact" class="container-fluid text-center">
       <div class="row">
@@ -42,19 +43,68 @@ require_once 'logicContact.php';
       </div>
     </div> -->
 
-    <form class="text-center">
-  <div class="mb-3 ">
-    <input type="text" class="form-control" id="" aria-describedby="">
-  </div>
-  <div class="mb-3">
-    <input type="email" class="form-control" id="exampleInputemail1">
-  </div>
-  <div class="mb-3 ">
-    <input type="textarea" class="form-control" id="" aria-describedby="">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <!-- drugi formmularz bootstrap -->
 
+<!-- <form class="text-center" action="contact.php" method="post" >
+
+  <div class="mb-3 ">
+    <input name="name" type="text" class="form-control" id="" aria-describedby="">
+  </div>
+  
+  <div class="mb-3">
+    <input name="email" type="email" class="form-control is-invalid" id="exampleInputemail1">
+  </div>
+ 
+  <select name="sujet" class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option value="First">One</option>
+    <option value="Second">Two</option>
+    <option value="Third">Three</option>
+  </select>
+
+  <div class="mb-3 ">
+    <input name="message" type="textarea" class="form-control" id="" aria-describedby="">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form> -->
+
+
+ <!-- Trzeci formmularz bootstrap z ostrzezeniem zeby wpisac dane -->
+
+<div class="container text-center w-50">
+<form class="was-validated" action="contact.php" method="post">
+<div class="mb-3 " >
+    <label for="validationTextarea" class="form-label"><strong>Name</strong></label>
+    <input class="form-control " id="validationTextarea" type="text" name="name" required>
+    
+  </div>
+  <div class="mb-5">
+    <label for="validationTextarea" class="form-label"><strong>E-mail</strong></label>
+    <input class="form-control" id="validationTextarea" type="email" name="email" required>
+  </div>
+
+
+  <div class="mb-3 ">
+    <select class="form-select text-center mt-4" required aria-label="select example" name="sujet">
+      <option value=""><strong>Open this select menu</strong></option>
+      <option value="First">One</option>
+      <option value="Second">Two</option>
+      <option value="Third">Three</option>
+    </select>
+  </div>
+    
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label"><strong>Message</strong></label>
+    <textarea class="form-control" id="validationTextarea" placeholder="" name="message" required></textarea>
+  </div>
+
+  <div class="mb-3">
+    <button class="btn btn-primary" type="submit" >Submit form</button>
+  </div>
+</form>
+</div>
 
 
 
