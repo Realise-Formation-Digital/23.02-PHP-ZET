@@ -5,24 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ZET</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <!-- Header Ariel section -->
+    
     <header class="container-fluid w-100 text-center align-content-center header-background-image text-light" id="home">
       <div class="row">
         <!-- GRID DU HEADER AVEC DES ESPACES POUR METTRE EN PAGE LE CONTENU -->
@@ -30,7 +20,7 @@
         <!-- LOGO AVEC LIEN "HOME" -->
         <div class="col-4 mt-5 mb-5 text-start">
           <a href="#home">
-            <img src="img/Header/logo.png" alt="home-logo" />
+            <img src="img/Header/logo.png" alt="home-logo"/>
           </a>
         </div>
         <!-- MENU AVEC LE LIEN À DEFINIR OU FENETRE A DEFINIR -->
@@ -42,8 +32,7 @@
             data-bs-target="#navbar"
             aria-controls="navbar"
             aria-expanded="false"
-            aria-label="Navbar navigation"
-          > MENU 
+            aria-label="Navbar navigation"> MENU 
             <span class="text-white"><i class="bi bi-list"></i></span>
           </button>
         </nav>
