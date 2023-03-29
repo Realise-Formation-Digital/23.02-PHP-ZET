@@ -18,17 +18,11 @@ require_once 'logicContact.php';
             <div class="form-row">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" />?>
-                 <?php if($nameError): ?>
-                    <p class="alert alert-danger"><?= $nameError ?></p>
-                <?php endif; ?>
+               
             </div>
             <div class="form-row">
               <label for="email">Email</label>
-              <?php if($nameError || $emailError || $sujetError || $messageError): ?>
-      
-                              <h6><?= $emailError ?></h6>
-       
-                 <?php endif; ?>
+              
               <input type="email" id="email" name="email"  />
 
             </div>

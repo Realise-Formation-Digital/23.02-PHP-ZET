@@ -31,7 +31,7 @@ if(!empty($_POST)){
         $messageError = "Quel est votre message";
         $success = false;
     }
-    var_dump($success);
+ 
     if($success===true){
 
     if (file_exists($filename))
@@ -46,7 +46,7 @@ if(!empty($_POST)){
     {
     fputcsv($messageCsv, array('Nom; Mail; Sujet; Message'));
     }
-    var_dump($existed);
+   
     // saving data to file
     fputcsv($messageCsv, array($name.";".$email.";".$sujet.";".$message));
     
