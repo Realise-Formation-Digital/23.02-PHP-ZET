@@ -1,12 +1,11 @@
 <?php 
-$name = $password = $messageError = $result = "";
-$success = true;
-$hash = '$1$rasmusle$0GYWlU.VOlg2Kw0dULQZb1';
+$name = $password = $passwordError = $messageError = $result = "";
 
 if(!empty($_POST))
 {
     $name = $_POST['name'];
     $password = $_POST['password'];
+    $success = true;
     if(empty($name))
     {
         $messageError = "Vous devez rentrer un nom ou un mot de passe";
@@ -19,10 +18,16 @@ if(!empty($_POST))
     }
     if($success)
     {
-        if (password_verify($password, $hash)) {
-            $result = 'mot de passe valid';
-        } else {
-            $result = 'Le mot de passe est invalide.';
+        if (($handle = fopen("user.csv", "r")) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) 
+            {
+                if (password_verify($password, $data[1])) {
+                    $passwordError = "mot de passe valid $data[0]";
+                } else {
+                    $passwordError = 'L utilisateur ou le mot de passe est invalide.';
+                }
+            }
+            fclose($handle);
         }
     }
 }
@@ -51,6 +56,12 @@ require './header.php';
 <?php if($result): ?>
     <div class="alert alert-success text-center">
         <?= $result ?>
+    </div>
+<?php endif; ?>
+
+<?php if($passwordError): ?>
+    <div class="alert alert-primary text-center">
+        <?= $passwordError ?>
     </div>
 <?php endif; ?>
 
