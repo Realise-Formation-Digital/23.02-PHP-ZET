@@ -71,7 +71,7 @@
               <a href="#professional-team" class="text-white">Our Professional Team</a>
             </div>
             <div class="fs-4">
-              <a href="#contact" class="text-white">Contact</a>
+              <a href="contact.php" class="text-white">Contact</a>
             </div>
             <div class="fs-4">
               <a href="#services" class="text-white">Page Privée</a>

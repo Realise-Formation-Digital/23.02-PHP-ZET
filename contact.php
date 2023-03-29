@@ -31,7 +31,7 @@ if(!empty($_POST)){
         $messageError = "Quel est votre message";
         $success = false;
     }
-
+    var_dump($success);
     if($success===true){
 
     if (file_exists($filename))
@@ -46,7 +46,7 @@ if(!empty($_POST)){
     {
     fputcsv($messageCsv, array('Nom; Mail; Sujet; Message'));
     }
-    
+    var_dump($existed);
     // saving data to file
     fputcsv($messageCsv, array($name.";".$email.";".$sujet.";".$message));
     
@@ -58,11 +58,10 @@ if(!empty($_POST)){
     $msgsuccess = "Votre message à été envoye.";
     }
 }
-?>
 
 
-<?php
- require('header.php');
+
+ require 'header.php';
 ?>
 
 <div id="contact" class="container-fluid text-center">
@@ -73,12 +72,12 @@ if(!empty($_POST)){
         <div class="col col-12 col-xl-6 col-sm-12 contact overlay">
           <img class="overlay" src="./img/overlay.png" alt="effet" />
           <!-- Formulaire -->
-          <form class="formulaire" action="">
+          <form class="formulaire" action="contact.php" method="post">
             <div class="form-row">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-                 <?php if($nameError || $emailError || $sujetError || $messageError): ?>
-                    <h4><?= $nameError ?></h4>
+              <input type="text" id="name" name="name" />?>
+                 <?php if($nameError): ?>
+                    <p class="alert alert-danger"><?= $nameError ?></p>
                 <?php endif; ?>
             </div>
             <div class="form-row">
@@ -108,5 +107,5 @@ if(!empty($_POST)){
     </div>
 
 <?php
- require('footer.php');
+ require 'footer.php';
 ?>
