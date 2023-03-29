@@ -1,19 +1,23 @@
 <?php
 session_start();
 
-$file = "message.csv";
-$openfile = fopen($file,"r");
-$content = fread($openfile, filesize($file));
-var_dump($content);
-$str = explode(';', $content);
-var_dump($str);
-
+$file = fopen('message.csv', 'r');
+while (($line = fgetcsv($file)) !== FALSE) {
+    $array = explode(";",$line[$i]);
+    var_dump($array);
+}
+fclose($file);
 require 'header.php'; 
 ?>
 <h1 class="text-center">Bonjour <?= $_SESSION['name'] ?></h1>
-<div class="container-grid-message">
-    <?php for($i=0;$i < count($str); $i++ ): ?>
-      
-    <?php endfor; ?>
-</div>
+    <table class="table table-striped">
+        <?php foreach($row as $r): ?>
+            <tr>
+                <td><?= $r[0] ?></td>
+                <td><?= $r[1] ?></td>
+                <td><?= $r[2] ?></td>
+                <td><?= $r[3] ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
 <?php require 'footer.php'; ?>

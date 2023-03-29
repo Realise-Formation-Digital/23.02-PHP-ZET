@@ -285,8 +285,3 @@ button:hover {
     background-position: center;
     background-size: cover;
 }
-
-.container-grid-message{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
