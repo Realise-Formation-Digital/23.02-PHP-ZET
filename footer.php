@@ -1,5 +1,5 @@
-    <!-- Footer Ariel section -->
-    <footer class="container-fluid footer-background-image text-dark">
+ <!-- Footer Ariel section -->
+ <footer class="container-fluid footer-background-image text-dark">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-2"><!-- spacer --></div>
