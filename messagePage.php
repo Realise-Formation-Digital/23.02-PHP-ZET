@@ -7,11 +7,10 @@ require './elements/header.php';
 
 ?>
 <h1 class="text-center">Bonjour <?= $_SESSION['name'] ?></h1>
-    <table class="table-info table-striped">
+    <table class="table table-striped mx-auto shadow-lg">
         <tbody>
            <?php foreach($lignes as $l):?>
             <?php $tab = explode(";", $l) ?>
-                <table class="table">
                     <tr>
                         <?php foreach($tab as $k => $t): ?>
                             <?php if($k === 0): ?>
@@ -28,7 +27,6 @@ require './elements/header.php';
                             <?php endif; ?>
                         <?php endforeach; ?>
                     </tr>
-                </table>
            <?php endforeach; ?>
         </tbody>
     </table>

@@ -51,13 +51,6 @@ if(!empty($_POST)){
     
     //  close file
     fclose($messageCsv);
-    $_SESSION['name'] = $name;
-    $_SESSION['email'] = $email;
-    $_SESSION['sujet'] = $sujet;
-    $_SESSION['mot'] = $message;
-    $_SESSION['message'] = $msgsuccess;
-    header('Location: messageRecu.php');
-    exit;
     }
 }
 
