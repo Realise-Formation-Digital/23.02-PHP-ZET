@@ -1,5 +1,4 @@
 <?php
-session_start();
 $name = $password = $passwordError = $messageError = "";
 
 if(!empty($_POST))

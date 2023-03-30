@@ -1,6 +1,7 @@
 <?php
 require './logic/logicMessage.php';
 require './elements/header.php'; 
+var_dump($_SESSION);
 ?>
 <h1 class="text-center">Bonjour <?= $_SESSION['name'] ?></h1>
     <table class="table-info table-striped">
