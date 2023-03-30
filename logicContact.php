@@ -1,7 +1,9 @@
 <?php
+session_start();
 $name = $email = $sujet = $message = $nameError = $emailError = $sujetError = $messageError = $msgsuccess = "";
 
 if(!empty($_POST)){
+    
     $name= $_POST['name'];
     $email= $_POST['email'];
     $sujet= $_POST['sujet'];
@@ -9,9 +11,9 @@ if(!empty($_POST)){
     $filename = 'message.csv';
     $messageCsv = ('');
     $success = true;
-    $msgsuccess = "";
+    $msgsuccess = "Votre message à été envoye.";
     $existed = 0;
-
+    $_SESSION['email'] =$email;
 
     //checking if the field is filled
     if(empty($name)){
@@ -32,41 +34,36 @@ if(!empty($_POST)){
         $success = false;
     }
  
+
     if($success===true){
 
-    if (file_exists($filename))
-    {
-        $existed = 1;
-    }
-    // creating a file if it doesn't exist
-    $messageCsv = fopen('message.csv', 'a');
-
-    
-    if(!$existed)
-    {
-    fputcsv($messageCsv, array('Nom; Mail; Sujet; Message'));
-    }
-   
-    // saving data to file
-    fputcsv($messageCsv, array($name.";".$email.";".$sujet.";".$message));
-    
-    
-    //  close file
-    fclose($messageCsv);
-
-
-    $msgsuccess = "Votre message à été envoye.";
-
-
-    if(isset($msgsuccess)){
-    //  To redirect form on a particular page
-    header('Location: index.php');
-    exit;
-    }
-
-    
-    
+        if (file_exists($filename))
+        {
+            $existed = 1;
         }
+        // creating a file if it doesn't exist
+        $messageCsv = fopen('message.csv', 'a');
+
+        
+        if(!$existed)
+        {
+        fputcsv($messageCsv, array('Nom; Mail; Sujet; Message'));
+        }
+    
+        // saving data to file
+        fputcsv($messageCsv, array($name.";".$email.";".$sujet.";".$message));
+        
+        
+        //  close file
+        fclose($messageCsv);
+
+
+            $_SESSION['contact'] = $msgsuccess;
+            header('Location: message.php');
+            exit;
+                
+
     }
+}
 
 ?>

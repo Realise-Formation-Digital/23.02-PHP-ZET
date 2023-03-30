@@ -1,4 +1,9 @@
-<?php require 'header.php'; ?>
+<?php
+
+require 'header.php'; ?>
+
+
+
 
     <!-- Felicien section -->
     <!-- Section Services-->
