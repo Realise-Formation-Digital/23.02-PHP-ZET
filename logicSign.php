@@ -38,6 +38,4 @@ if(!empty($_POST))
         $messageSucces = 'Vos donnees sont bien enregistrer';
      }
 }
-
-
 ?>
