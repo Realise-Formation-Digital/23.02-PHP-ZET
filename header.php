@@ -46,15 +46,8 @@
           > MENU 
             <span class="text-white"><i class="bi bi-list"></i></span>
           </button>
-        </nav>
-        <div class="collapse" id="navbar">
-          <div class="p-4">
-            <div class="fs-4">
-              <a href="#services" class="text-white">Connexion</a>
-            </div>
-            <div class="fs-4">
-              <a href="sign.php" class="text-white">Inscription</a>
-            </div>
+          <div class="collapse" id="navbar">
+            <div class="p-4">
             <div class="fs-4">
               <a href="#services" class="text-white">Services</a>
             </div>
@@ -74,10 +67,42 @@
               <a href="contact.php" class="text-white">Contact</a>
             </div>
             <div class="fs-4">
-              <a href="#services" class="text-white">Page Privée</a>
+              <a href="login.php" class="text-white">Login</a>
+            </div>
+            <div class="fs-4">
+              <a href="sign.php" class="text-white">Inscription</a>
             </div>
           </div>
+        </nav>
         </div>
       </div>
       
+      <div class="col-sm-2"><!-- spacer --></div>
+      <div class="row mt-5 mb-3">
+        <!-- PLACE AU TEXTE DU CONTENU -->
+        <div class="col-sm-4"><!-- spacer --></div>
+        <div class="col-sm-4 text-center">
+          <h1 class="mb-2">Something Nothing</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            reiciendis maiores corrupti praesentium veritatis numquam molestias
+            natus. Optio aliquam ipsa nisi, aperiam, voluptatibus nam laborum
+            debitis, tempora iure repudiandae eius!
+          </p>
+          <!-- <img src="./Zet-Site-Content/Header/text.png" alt="texte" /> -->
+        </div>
+        <div class="col-sm-4"><!-- spacer --></div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-12">
+          <img src="img/Header/button.png" alt="letstalk-button" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-12">
+          <a href="www.ZET.com/letstalk">
+            <img src="img/Header/arrow.png" alt="arrow" />
+          </a>
+        </div>
+      </div>
     </header>

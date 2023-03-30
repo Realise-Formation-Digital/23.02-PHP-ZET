@@ -23,8 +23,12 @@ require_once 'logicContact.php';
             </div>
             <div class="form-row">
               <label for="email">Email</label>
-              
-              <input type="email" id="email" name="email"  />
+              <?php if($nameError || $emailError || $sujetError || $messageError): ?>
+      
+                              <h6><?= $emailError ?></h6>
+       
+                 <?php endif; ?>
+              <input type="text" id="email" name="email"  />
 
             </div>
             <div class="form-row">
