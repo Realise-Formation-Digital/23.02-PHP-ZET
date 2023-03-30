@@ -29,7 +29,7 @@ require_once 'logicContact.php';
                               <h6><?= $emailError ?></h6>
        
                  <?php endif; ?>
-              <input type="email" id="email" name="email"  />
+              <input type="text" id="email" name="email"  />
 
             </div>
             <div class="form-row">
