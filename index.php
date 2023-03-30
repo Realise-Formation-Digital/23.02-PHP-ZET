@@ -1,8 +1,7 @@
-<?php require 'header.php'; ?>
+<?php include_once 'header.php'; ?>
 
-    <!-- Felicien section -->
-    <!-- Section Services-->
-    <section id="services" class="container-fluid p-8">
+
+<section id="services" class="container-fluid p-8">
       <h3 class="text-center mt-3 fw-bolder">SERVICES</h3>
       <div class="text-center">
         Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
@@ -687,4 +686,5 @@
       </div>
     </div>
 
-   <?php require 'footer.php';?>
+
+   <?php include_once 'footer.php';?>
