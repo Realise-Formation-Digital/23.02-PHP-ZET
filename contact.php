@@ -101,13 +101,12 @@ require_once 'logicContact.php';
   </div>
 
   <div class="mb-3">
-    <button class="btn btn-primary" type="submit" >Submit form</button>
+    <button class="btn btn-primary" type="submit" name='submit' >Submit form</button>
   </div>
 </form>
 </div>
 
 <?php
-include 'redirect.php';
 
  require 'footer.php';
 ?>

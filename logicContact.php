@@ -56,7 +56,17 @@ if(!empty($_POST)){
 
 
     $msgsuccess = "Votre message à été envoye.";
+
+
+    if(isset($msgsuccess)){
+    //  To redirect form on a particular page
+    header('Location: index.php');
+    exit;
     }
-}
+
+    
+    
+        }
+    }
 
 ?>
