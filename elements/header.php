@@ -1,7 +1,4 @@
 <?php 
-
-session_start();
-
 if(!isset($_SESSION['name']))
 {
   $_SESSION['name'] = "";
@@ -80,7 +77,7 @@ if(!isset($_SESSION['name']))
             </div>
             <?php if($_SESSION['name']): ?>
             <div class="fs-4">
-              <a href="logout.php" class="text-white">Logout</a>
+              <a href="./logic/logout.php" class="text-white">Logout</a>
             </div>
             <?php endif; ?>
             <div class="fs-4">

@@ -1,6 +1,9 @@
-<?php 
-require './elements/header.php';
+<?php
+
+session_start();
+
 require './logic/logicLogin.php';
+require './elements/header.php';
 
 ?>
 <?php if($messageError): ?>

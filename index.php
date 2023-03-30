@@ -1,4 +1,9 @@
-<?php require './elements/header.php'; ?>
+<?php 
+
+session_start();
+
+require './elements/header.php'; 
+?>
 
     <!-- Felicien section -->
     <!-- Section Services-->

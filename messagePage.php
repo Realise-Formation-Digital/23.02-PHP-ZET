@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 require './logic/logicMessage.php';
 require './elements/header.php'; 
 var_dump($_SESSION);
