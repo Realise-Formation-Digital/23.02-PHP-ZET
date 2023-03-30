@@ -1,11 +1,5 @@
 "Nom; Mail; Sujet; Message"
-DanSaj;danielajdak65@gmail.com;First;daniel
-DanSaj;danielajdak65@gmail.com;First;daniel
-test1;amin@hp.com;Second;test
-DanSaj;danielajdak65@gmail.com;Third;test3
-DanSaj;danielajdak65@gmail.com;Third;test3
-DanSaj;danielajdak65@gmail.com;Third;test3
-DanSaj;amin@hp.com;3;dasdasgghkhj
-DanSaj;amin@hp.com;3;dasdasgghkhj
-DanSaj;amin@hp.com;3;dasdasgghkhj
-DanSaj;test@one.com;First;54653w645
+"DanSaj;danielajdak65@gmail.com;First;test after redirect"
+"DanSaj;amin@hp.com;First;second test"
+"DanSaj;amin@hp.com;First;second test"
+DanSaj;amin@hp.com;Second;third

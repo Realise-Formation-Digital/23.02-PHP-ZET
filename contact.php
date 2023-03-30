@@ -106,8 +106,8 @@ require_once 'logicContact.php';
 </form>
 </div>
 
-
-
 <?php
+include 'redirect.php';
+
  require 'footer.php';
 ?>
