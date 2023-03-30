@@ -83,6 +83,11 @@ if(!isset($_SESSION['name']))
             <div class="fs-4">
               <a href="sign.php" class="text-white">Inscription</a>
             </div>
+            <?php if($_SESSION['name']): ?>
+            <div class="fs-4">
+              <a href="messagePage.php" class="text-white">Page privée</a>
+            </div>
+            <?php endif; ?>
           </div>
         </nav>
         </div>
