@@ -46,9 +46,8 @@
           > MENU 
             <span class="text-white"><i class="bi bi-list"></i></span>
           </button>
-        </nav>
-        <div class="collapse" id="navbar">
-          <div class="p-4">
+          <div class="collapse" id="navbar">
+            <div class="p-4">
             <div class="fs-4">
               <a href="#services" class="text-white">Services</a>
             </div>
@@ -74,8 +73,10 @@
               <a href="sign.php" class="text-white">Inscription</a>
             </div>
           </div>
+        </nav>
         </div>
       </div>
+      
       <div class="col-sm-2"><!-- spacer --></div>
       <div class="row mt-5 mb-3">
         <!-- PLACE AU TEXTE DU CONTENU -->
