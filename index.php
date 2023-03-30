@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+<?php require './elements/header.php'; ?>
 
     <!-- Felicien section -->
     <!-- Section Services-->
@@ -687,4 +687,4 @@
       </div>
     </div>
 
-   <?php require 'footer.php';?>
+   <?php require './elements/footer.php';?>

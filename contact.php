@@ -1,9 +1,9 @@
 <?php
 
-require_once 'logicContact.php';
+require_once './logic/logicContact.php';
 
 
- require 'header.php';
+ require './elements/header.php';
 ?>
 
 <div id="contact" class="container-fluid text-center">
@@ -49,5 +49,5 @@ require_once 'logicContact.php';
     </div>
 
 <?php
- require 'footer.php';
+ require './elements/footer.php';
 ?>

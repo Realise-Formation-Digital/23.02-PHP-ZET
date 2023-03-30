@@ -1,8 +1,8 @@
 <?php
-require_once 'logicSign.php';
+require_once './logic/logicSign.php';
 
 
-require 'header.php';
+require './elements/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,4 +34,4 @@ require 'header.php';
 
 
 
-<?php require './footer.php'; ?>
+<?php require './elements/footer.php'; ?>
