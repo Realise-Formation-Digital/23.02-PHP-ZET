@@ -7,6 +7,7 @@ require './elements/header.php';
 
 ?>
 <h1 class="text-center">Bonjour <?= $_SESSION['name'] ?></h1>
+<!-- si pas de message renvoi l'information -->
     <?php if(isset($_SESSION['notFiles'])): ?>
         <div class="alert alert-info text-center">
             <?= $_SESSION['notFiles'] ?>
