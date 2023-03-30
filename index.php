@@ -4,7 +4,11 @@ session_start();
 
 require './elements/header.php'; 
 ?>
-
+    <?php if($_SESSION['message']): ?>
+      <div class="fs-4">
+        <p><?= $_SESSION['message'] ?></p>
+      </div>
+    <?php endif; ?>
     <!-- Felicien section -->
     <!-- Section Services-->
     <section id="services" class="container-fluid p-8">
