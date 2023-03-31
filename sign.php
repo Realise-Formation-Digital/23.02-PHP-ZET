@@ -1,4 +1,5 @@
 <?php
+// logincSing /header
 require_once 'logicSign.php';
 
 require 'header.php';
@@ -12,7 +13,8 @@ require 'header.php';
     <title>formulaire d'inscription</title>
 </head>
 <body>
-<!-- Fust Version Bootstrap -->
+
+<!-- Fust-Version-Bootstrap -->
 <!-- <form action="" method="post" class ="text-center">
   <div class="mb-3" >
   <label  for="exampleInputEmail1" class="form-label">username</label>
@@ -35,63 +37,39 @@ require 'header.php';
 <?php endif; ?>
 </form> -->
 
-<form class="was-validated">
-  <div class="mb-3">
-    <label for="validationTextarea" class="form-label">Username</label>
-    <input name="name" type="text"class="form-control" id="validationTextarea" placeholder="username" required>
+<!-- Final-Version-Bootstrap -->
+<div class="container text-center my-5 w-50 border border-secondary rounded shadow-lg
+">
+<form class="was-validated text-center" action="" method="post">
+  <div class="mb-3 mx-4">
+    <label for="validationTextarea" class="form-label mt-2">E-mail, nom d'utilisateur ou numéro de téléphone</label>
+    <input name="name" type="text"class="form-control text-center" id="validationTextarea" placeholder="Saisir le nom d'utilisateur" required>
     <div class="invalid-feedback">
-      
+
+<!-- error username-->
+    <?php if($usernameError): ?>
+    <p><?= $usernameError ?></p>
+    <?php endif; ?>
     </div>
   </div>
 
-  <div class="mb-3">
-    <label for="validationTextarea" class="form-label">Password</label>
-    <input name="password" type="password" class="form-control" id="validationTextarea" placeholder="Password" required>
+  <!--Saisir le mot de passe-->
+  <div class="mb-3 mx-4">
+    <label for="validationTextarea" class="form-label">Saisir le mot de passe</label>
+    <input name="password" type="password" class="form-control" id="validationTextarea" placeholder="" required>
     <div class="invalid-feedback">
-      Please enter your password.
+
+<!--passwordError -->
+    <?php if($passwordError): ?>
+        <p><?= $passwordError?></p>
+       <?php endif; ?>
     </div>
   </div>
 
-
+  <!--Bouton inscription-->
   <div class="mb-3">
     <button class="btn btn-primary" type="submit">inscription</button>
   </div>
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 <?php require './footer.php'; ?>

@@ -26,4 +26,4 @@ require './header.php';
     </div>
 <?php endif; ?>
 
-<?php require './footer.php'; ?>
+<?php require './login.php'; ?>

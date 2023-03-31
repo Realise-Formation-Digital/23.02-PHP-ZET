@@ -35,7 +35,10 @@ if(!empty($_POST))
 
         fclose($userCsv);
 
-        $messageSucces = 'Vos donnees sont bien enregistrer';
+        $messageSucces = 'Vos donnees sont bien enregistrer'; 
+
+         header ('Location: login.php');
+         exit;
      }
 }
 ?>
