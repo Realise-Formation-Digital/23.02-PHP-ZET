@@ -11,6 +11,7 @@
     </button>
         <div class="collapse" id="navbar">
             <div class="p-4">
+            
                 <div class="fs-4">
                     <a href="index.php" class="text-white">Home</a>
                 </div>
@@ -34,7 +35,7 @@
                 </div>
                 <?php if($_SESSION['name']): ?>
                     <div class="fs-4">
-                        <a href="logout.php" class="text-white">Logout</a>
+                        <a href="./logic/logout.php" class="text-white">Logout</a>
                     </div>
                     <div class="fs-4">
                         <a href="messagePage.php" class="text-white">Page privée</a>
