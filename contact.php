@@ -1,38 +1,12 @@
 <?php
 
-require_once 'logicContact.php';
+require_once './logic/logicContact.php';
 
 
- require 'header.php';
+ require 'elements/header.php';
 ?>
 
 
-    <!-- drugi formmularz bootstrap -->
-
-<!-- <form class="text-center" action="contact.php" method="post" >
-
-  <div class="mb-3 ">
-    <input name="name" type="text" class="form-control" id="" aria-describedby="">
-  </div>
-  
-  <div class="mb-3">
-    <input name="email" type="email" class="form-control is-invalid" id="exampleInputemail1">
-  </div>
- 
-  <select name="sujet" class="form-select" aria-label="Default select example">
-    <option selected>Open this select menu</option>
-    <option value="First">One</option>
-    <option value="Second">Two</option>
-    <option value="Third">Three</option>
-  </select>
-
-  <div class="mb-3 ">
-    <input name="message" type="textarea" class="form-control" id="" aria-describedby="">
-  </div>
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-
-</form> -->
 
 
  <!-- Trzeci formmularz bootstrap z ostrzezeniem zeby wpisac dane -->
@@ -41,29 +15,40 @@ require_once 'logicContact.php';
 <form class="was-validated " action="contact.php" method="post">
 <div class="mb-3 mx-4" >
     <label for="validationTextarea" class="form-label mt-2"><strong>Name</strong></label>
-    <input class="form-control " id="validationTextarea" type="text" name="name" required>
-    
+    <input class="form-control " id="validationTextarea" type="text" name="name" >
   </div>
+  <?php if($nameError): ?>
+    <p class="alert alert-danger"><?= $nameError ?></p>
+  <?php endif; ?>
   <div class="mb-5 mx-4">
     <label for="validationTextarea" class="form-label"><strong>E-mail</strong></label>
-    <input class="form-control" id="validationTextarea" type="email" name="email" required>
+    <input class="form-control" id="validationTextarea" type="text" name="email">
   </div>
-
+  <?php if($emailError): ?>
+    <p class="alert alert-danger"><?= $emailError ?></p>
+  <?php endif; ?>
+  <?php if($typeEmail): ?>
+    <p class="alert alert-danger"><?= $typeEmail?></p>
+  <?php endif; ?>
 
   <div class="mb-3 mx-4">
-    <select class="form-select text-center mt-4" required aria-label="select example" name="sujet">
+    <select class="form-select text-center mt-4" aria-label="select example" name="sujet">
       <option value="">Sélectionner un sujet</option>
       <option value="First">Maintenace</option>
       <option value="Second">Service</option>
       <option value="Third">Questions</option>
     </select>
   </div>
-    
+  <?php if($sujetError): ?>
+    <p class="alert alert-danger"><?= $sujetError ?></p>
+  <?php endif; ?>
   <div class="mb-3 mx-4">
     <label for="validationTextarea" class="form-label"><strong>Message</strong></label>
-    <textarea class="form-control" id="validationTextarea" placeholder="" name="message" required></textarea>
+    <textarea class="form-control" id="validationTextarea" placeholder="" name="message"></textarea>
   </div>
-
+  <?php if($messageError): ?>
+    <p class="alert alert-danger"><?= $messageError ?></p>
+  <?php endif; ?>
   <div class="mb-3">
     <button class="btn btn-primary" type="submit" name='submit' >Envoyer</button>
   </div>
@@ -72,5 +57,5 @@ require_once 'logicContact.php';
 
 <?php
 
- require 'footer.php';
+ require 'elements/footer.php';
 ?>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'header.php'
+require 'elements/header.php'
 ?>
 
 <div class="container  text-center my-3">
@@ -17,4 +17,4 @@ require 'header.php'
 </div>
 
 
-<?php require 'footer.php';?>
+<?php require 'elements/footer.php';?>

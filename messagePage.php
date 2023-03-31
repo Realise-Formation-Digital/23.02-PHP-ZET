@@ -1,6 +1,6 @@
 <?php
-require './logicMessage.php';
-require 'header.php'; 
+require './logic/logicMessage.php';
+require 'elements/header.php'; 
 ?>
 <h1 class="text-center">Bonjour <?= $_SESSION['name'] ?></h1>
     <table class="table-info table-striped">
@@ -28,4 +28,4 @@ require 'header.php';
            <?php endforeach; ?>
         </tbody>
     </table>
-<?php require 'footer.php'; ?>
+<?php require 'elements/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php require_once 'doctyp.php'?>
+<?php require_once 'elements/doctyp.php'?>
 
 <body>
     
@@ -14,7 +14,7 @@
         </div>
         <!-- MENU AVEC LE LIEN À DEFINIR OU FENETRE A DEFINIR -->
 
-        <?php require_once 'nav.php'?>
+        <?php require_once 'elements/nav.php'?>
 
      <?php  /* include_once 'textheader.php' */ ?>
         

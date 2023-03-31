@@ -1,6 +1,11 @@
 <?php
 session_start();
-$name = $email = $sujet = $message = $nameError = $emailError = $sujetError = $messageError = $msgsuccess = "";
+$name = $email = $sujet = $message = $nameError = $emailError = $sujetError = $messageError = $msgsuccess = $typeEmail = "";
+
+function isEmail(string $value)
+{
+    return filter_var($value, FILTER_VALIDATE_EMAIL);
+}
 
 if(!empty($_POST)){
     
@@ -14,6 +19,7 @@ if(!empty($_POST)){
     $msgsuccess = "Votre message à été envoye.";
     $existed = 0;
     $_SESSION['email'] =$email;
+    
 
     //checking if the field is filled
     if(empty($name)){
@@ -25,6 +31,11 @@ if(!empty($_POST)){
         $emailError= "entrer un email";
         $success = false;
     }
+    if(!isEmail($email))
+    {
+        $typeEmail = "Ce n'est pas un email";
+        $success = false;
+    }
     if(empty($sujet)){
         $sujetError = "on parle de quel sujet";
         $success = false;
@@ -33,7 +44,6 @@ if(!empty($_POST)){
         $messageError = "Quel est votre message";
         $success = false;
     }
- 
 
     if($success===true){
 

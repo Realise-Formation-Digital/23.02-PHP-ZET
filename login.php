@@ -1,6 +1,6 @@
 <?php 
-require './logicLogin.php';
-require './header.php';
+require 'logic/logicLogin.php';
+require 'elements/header.php';
 ?>
 <?php if($messageError): ?>
     <div class="alert alert-danger text-center">
@@ -26,4 +26,4 @@ require './header.php';
     </div>
 <?php endif; ?>
 
-<?php require './footer.php'; ?>
+<?php require 'elements/footer.php'; ?>
