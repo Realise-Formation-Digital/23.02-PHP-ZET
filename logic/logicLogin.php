@@ -1,4 +1,5 @@
 <?php
+require_once './login/checkInput.php';
 // déclaration des variables pour les conditions de traitement du formulaire de login et initialisation
 $name = $password = $passwordError = $messageError = "";
 
@@ -6,8 +7,8 @@ $name = $password = $passwordError = $messageError = "";
 if(!empty($_POST))
 {
     // attribution des valeurs au variable déclaré.
-    $name = $_POST['name'];
-    $password = $_POST['password'];
+    $name = checkInput($_POST['name']);
+    $password = checkInput($_POST['password']);
     $success = true;
 
     // si pas de name on arrete et on envoi un message d'erreur
