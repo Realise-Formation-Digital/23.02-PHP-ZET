@@ -1,4 +1,14 @@
-<?php session_start();
+<?php 
+session_start();
+<?php 
+
+session_start();
+
+if(!isset($_SESSION['name']))
+{
+  $_SESSION['name'] = "";
+}
+?>
 require './elements/header.php';
 ?>
 
@@ -688,4 +698,4 @@ require './elements/header.php';
       </div>
     </div>
 
-   <?php require 'footer.php';?>
+   <?php require './elements/footer.php';?>
