@@ -1,5 +1,5 @@
 <?php
-require_once './login/checkInput.php';
+require_once './logic/checkInput.php';
 // déclaration des variables pour les conditions de traitement du formulaire de login et initialisation
 $name = $password = $passwordError = $messageError = "";
 
