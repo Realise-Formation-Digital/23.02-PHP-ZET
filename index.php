@@ -5,7 +5,6 @@ if(!isset($_SESSION['name']))
 {
   $_SESSION['name'] = "";
 }
-?>
 require './elements/header.php';
 ?>
 
