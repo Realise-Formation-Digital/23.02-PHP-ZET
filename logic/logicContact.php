@@ -1,4 +1,5 @@
 <?php
+require_once './login/checkInput.php';
 $name = $email = $sujet = $message = $nameError = $emailError = $sujetError = $messageError = $msgsuccess = $typeEmail = "";
 
 // function that checks if email is entered
@@ -10,10 +11,10 @@ function isEmail(string $value)
 // checking if the field is filled
 if(!empty($_POST)){
     
-    $name= $_POST['name'];
-    $email= $_POST['email'];
-    $sujet= $_POST['sujet'];
-    $message= $_POST['message'];
+    $name= checkInput($_POST['name']);
+    $email= checkInput($_POST['email']);
+    $sujet= checkInput($_POST['sujet']);
+    $message= checkInput($_POST['message']);
     $filename = 'message.csv';
     $messageCsv = ('');
     $success = true;
