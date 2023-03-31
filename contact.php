@@ -9,7 +9,7 @@ require_once './logic/logicContact.php';
 
 
 
- <!-- Trzeci formmularz bootstrap z ostrzezeniem zeby wpisac dane -->
+ <!-- Formulaire contact -->
 
 <div class="container text-center my-5 w-50 border border-secondary rounded shadow-lg">
 <form class="was-validated " action="contact.php" method="post">
@@ -17,6 +17,7 @@ require_once './logic/logicContact.php';
     <label for="validationTextarea" class="form-label mt-2"><strong>Name</strong></label>
     <input class="form-control " id="validationTextarea" type="text" name="name" >
   </div>
+  <!-- message  -->
   <?php if($nameError): ?>
     <p class="alert alert-danger"><?= $nameError ?></p>
   <?php endif; ?>
@@ -24,6 +25,7 @@ require_once './logic/logicContact.php';
     <label for="validationTextarea" class="form-label"><strong>E-mail</strong></label>
     <input class="form-control" id="validationTextarea" type="text" name="email">
   </div>
+   <!-- message  -->
   <?php if($emailError): ?>
     <p class="alert alert-danger"><?= $emailError ?></p>
   <?php endif; ?>
@@ -39,6 +41,7 @@ require_once './logic/logicContact.php';
       <option value="Third">Questions</option>
     </select>
   </div>
+   <!-- message  -->
   <?php if($sujetError): ?>
     <p class="alert alert-danger"><?= $sujetError ?></p>
   <?php endif; ?>
@@ -46,6 +49,7 @@ require_once './logic/logicContact.php';
     <label for="validationTextarea" class="form-label"><strong>Message</strong></label>
     <textarea class="form-control" id="validationTextarea" placeholder="" name="message"></textarea>
   </div>
+   <!-- message  -->
   <?php if($messageError): ?>
     <p class="alert alert-danger"><?= $messageError ?></p>
   <?php endif; ?>
