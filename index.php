@@ -1,6 +1,6 @@
 <?php session_start();
-
-require './elements/header.php';  ?>
+require './elements/header.php';
+?>
 
 
 <section id="services" class="container-fluid p-8">
