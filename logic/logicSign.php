@@ -1,5 +1,5 @@
 <?php
-require_once './login/checkInput.php';
+require_once './logic/checkInput.php';
 
 $username = $password = $usernameError = $passwordError = $hash = $messageSucces = "";
 

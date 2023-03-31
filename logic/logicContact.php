@@ -1,5 +1,5 @@
 <?php
-require_once './login/checkInput.php';
+require_once './logic/checkInput.php';
 $name = $email = $sujet = $message = $nameError = $emailError = $sujetError = $messageError = $msgsuccess = $typeEmail = "";
 
 // function that checks if email is entered
