@@ -13,7 +13,7 @@ require 'header.php';
     <title>formulaire d'inscription</title>
 </head>
 <body>
-
+  
 <!-- Fust-Version-Bootstrap -->
 <!-- <form action="" method="post" class ="text-center">
   <div class="mb-3" >
@@ -43,7 +43,7 @@ require 'header.php';
 <form class="was-validated text-center" action="" method="post">
   <div class="mb-3 mx-4">
     <label for="validationTextarea" class="form-label mt-2">E-mail, nom d'utilisateur ou numéro de téléphone</label>
-    <input name="name" type="text"class="form-control text-center" id="validationTextarea" placeholder="Saisir le nom d'utilisateur" required>
+    <input name="name" type="text"class="form-control text-center" id="validationTextarea" placeholder="Saisir le nom d'utilisateur">
     <div class="invalid-feedback">
 
 <!-- error username-->
@@ -56,7 +56,7 @@ require 'header.php';
   <!--Saisir le mot de passe-->
   <div class="mb-3 mx-4">
     <label for="validationTextarea" class="form-label">Saisir le mot de passe</label>
-    <input name="password" type="password" class="form-control" id="validationTextarea" placeholder="" required>
+    <input name="password" type="password" class="form-control" id="validationTextarea" placeholder="">
     <div class="invalid-feedback">
 
 <!--passwordError -->
