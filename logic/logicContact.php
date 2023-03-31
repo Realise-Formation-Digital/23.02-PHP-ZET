@@ -2,11 +2,13 @@
 require_once './login/checkInput.php';
 $name = $email = $sujet = $message = $nameError = $emailError = $sujetError = $messageError = $msgsuccess = $typeEmail = "";
 
+// function that checks if email is entered
 function isEmail(string $value)
 {
     return filter_var($value, FILTER_VALIDATE_EMAIL);
 }
 
+// checking if the field is filled
 if(!empty($_POST)){
     
     $name= checkInput($_POST['name']);
@@ -21,7 +23,7 @@ if(!empty($_POST)){
     $_SESSION['email'] =$email;
     
 
-    //checking if the field is filled
+    //checking if the field is filled in if not then display a message
     if(empty($name)){
         $nameError = "J'ai besoin d'un nom";
         $success = false;
@@ -45,6 +47,7 @@ if(!empty($_POST)){
         $success = false;
     }
 
+
     if($success===true){
 
         if (file_exists($filename))
@@ -67,7 +70,7 @@ if(!empty($_POST)){
         //  close file
         fclose($messageCsv);
 
-
+            // redirect to redirection to page with confirmation of sending the message
             $_SESSION['contact'] = $msgsuccess;
             header('Location: message.php');
             exit;
