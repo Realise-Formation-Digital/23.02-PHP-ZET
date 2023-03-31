@@ -37,8 +37,8 @@ require_once 'logicContact.php';
 
  <!-- Trzeci formmularz bootstrap z ostrzezeniem zeby wpisac dane -->
 
-<div class="container text-center my-5 w-50 border border-secondary rounded">
-<form class="was-validated" action="contact.php" method="post">
+<div class="container text-center my-5 w-50 border border-secondary rounded shadow-lg">
+<form class="was-validated " action="contact.php" method="post">
 <div class="mb-3 mx-4" >
     <label for="validationTextarea" class="form-label mt-2"><strong>Name</strong></label>
     <input class="form-control " id="validationTextarea" type="text" name="name" required>
@@ -52,10 +52,10 @@ require_once 'logicContact.php';
 
   <div class="mb-3 mx-4">
     <select class="form-select text-center mt-4" required aria-label="select example" name="sujet">
-      <option value=""><strong>Open this select menu</strong></option>
-      <option value="First">One</option>
-      <option value="Second">Two</option>
-      <option value="Third">Three</option>
+      <option value="">Sélectionner un sujet</option>
+      <option value="First">Maintenace</option>
+      <option value="Second">Service</option>
+      <option value="Third">Questions</option>
     </select>
   </div>
     
@@ -65,7 +65,7 @@ require_once 'logicContact.php';
   </div>
 
   <div class="mb-3">
-    <button class="btn btn-primary" type="submit" name='submit' >Submit form</button>
+    <button class="btn btn-primary" type="submit" name='submit' >Envoyer</button>
   </div>
 </form>
 </div>
