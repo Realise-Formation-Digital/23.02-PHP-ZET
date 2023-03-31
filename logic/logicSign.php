@@ -1,6 +1,5 @@
 <?php
 
-
 $username = $password = $usernameError = $passwordError = $hash = $messageSucces = "";
 
 if(!empty($_POST))
