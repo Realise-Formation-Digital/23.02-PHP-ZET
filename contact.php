@@ -1,9 +1,9 @@
 <?php
+session_start()
+require_once 'logicContact.php';
 
-require_once './logic/logicContact.php';
 
-
- require 'elements/header.php';
+ require 'header.php';
 ?>
 
 
@@ -56,6 +56,5 @@ require_once './logic/logicContact.php';
 </div>
 
 <?php
-
- require 'elements/footer.php';
+ require 'footer.php';
 ?>

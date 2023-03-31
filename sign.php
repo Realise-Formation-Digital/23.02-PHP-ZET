@@ -1,8 +1,9 @@
 <?php
+session_start();
 require_once './logic/logicSign.php';
 
 
-require 'elements/header.php';
+require './elements/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,4 +35,4 @@ require 'elements/header.php';
 
 
 
-<?php require 'elements/footer.php'; ?>
+<?php require './elements/footer.php'; ?>

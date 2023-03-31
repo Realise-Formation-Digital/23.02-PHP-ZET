@@ -28,11 +28,19 @@
                     <a href="contact.php" class="text-white">Contact</a>
                 </div>
                 <div class="fs-4">
-                    <a href="login.php" class="text-white">Login</a>
-                </div>
-                <div class="fs-4">
                     <a href="sign.php" class="text-white">Inscription</a>
                 </div>
+                <div class="fs-4">
+                    <a href="login.php" class="text-white">Login</a>
+                </div>
+                <?php if($_SESSION['name']): ?>
+                    <div class="fs-4">
+                        <a href="logout.php" class="text-white">Logout</a>
+                    </div>
+                    <div class="fs-4">
+                        <a href="messagePage.php" class="text-white">Page privée</a>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
 </nav>
