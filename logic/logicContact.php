@@ -1,5 +1,4 @@
 <?php
-session_start();
 $name = $email = $sujet = $message = $nameError = $emailError = $sujetError = $messageError = $msgsuccess = $typeEmail = "";
 
 function isEmail(string $value)
