@@ -1,5 +1,6 @@
 <?php
 
+
 $username = $password = $usernameError = $passwordError = $hash = $messageSucces = "";
 
 if(!empty($_POST))
@@ -35,9 +36,11 @@ if(!empty($_POST))
 
         fclose($userCsv);
 
-        $messageSucces = 'Vos donnees sont bien enregistrer';
+        $messageSucces = 'Vos donnees sont bien enregistrer'; 
+
+        // link button inscription 
+         header ('Location: login.php');
+         exit;
      }
 }
-
-
 ?>
