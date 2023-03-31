@@ -1,11 +1,12 @@
 <?php
+require_once './login/checkInput.php';
 
 $username = $password = $usernameError = $passwordError = $hash = $messageSucces = "";
 
 if(!empty($_POST))
 {
-    $username = $_POST['name'];
-    $password = $_POST['password'];
+    $username = checkInput($_POST['name']);
+    $password = checkInput($_POST['password']);
     $validation = true;
     $filename = 'user.csv';
     $existe = 0;
