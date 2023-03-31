@@ -15,11 +15,11 @@ require './elements/header.php';
     <form action="login.php" method="post" class="was-validated">
         <div class="mb-3">
             <label for="exampleFormControlInput" class="form-label">Votre nom</label>
-            <input type="text" class="form-control is-valid" id="exampleFormControlInput" placeholder="votre nom" name="name" required>
+            <input type="text" class="form-control is-valid" id="exampleFormControlInput" placeholder="votre nom" name="name">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Votre mot de passe</label>
-            <input type="password" class="form-control is-valid" id="exampleFormControlInput1" placeholder="votre mot de passe" name="password" required>
+            <input type="password" class="form-control is-valid" id="exampleFormControlInput1" placeholder="votre mot de passe" name="password">
         </div>
         <button type="submit" class="btn btn-primary mx-auto">soumettre</button>
     </form>
