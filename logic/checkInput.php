@@ -9,6 +9,8 @@
 function checkInput (string $value){
 $value = trim($value);
 
+$value = htmlspecialchars($value);
+
 $value = htmlentities($value);
 return $value;
 
