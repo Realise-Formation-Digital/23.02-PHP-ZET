@@ -1,8 +1,9 @@
 <?php
-// logincSing /header
-require_once 'logicSign.php';
+session_start();
+require_once './logic/logicSign.php';
 
-require 'header.php';
+
+require './elements/header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +28,7 @@ require 'header.php';
   <label for="exampleInputPassword1" class="form-label">Password</label>
     <input name="password"type="password" class="form-control" id="exampleInputPassword1">
     <?php if($passwordError): ?>
-        <p><?= $passwordError?></p>
+        <p class="alert alert-danger"><?= $passwordError?></p>
        <?php endif; ?>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
@@ -65,11 +66,10 @@ require 'header.php';
        <?php endif; ?>
     </div>
   </div>
-
   <!--Bouton inscription-->
   <div class="mb-3">
     <button class="btn btn-primary" type="submit">inscription</button>
   </div>
 </form>
 </div>
-<?php require './footer.php'; ?>
+<?php require './elements/footer.php'; ?>
