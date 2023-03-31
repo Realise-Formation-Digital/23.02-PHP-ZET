@@ -11,7 +11,7 @@ require './elements/header.php';
         <?= $messageError ?>
     </div>
 <?php endif; ?>
-<div class="container-sm mx-auto my-2 shadow-lg p-5 rounded-5">
+<div class="container-sm mx-auto my-2 shadow-lg p-5 rounded-5 text-center">
     <form action="login.php" method="post" class="was-validated">
         <div class="mb-3">
             <label for="exampleFormControlInput" class="form-label">Votre nom</label>
