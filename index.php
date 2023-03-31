@@ -1,4 +1,4 @@
-<?php include_once 'header.php'; ?>
+<?php include_once 'elements/header.php'; ?>
 
 
 <section id="services" class="container-fluid p-8">
@@ -687,4 +687,4 @@
     </div>
 
 
-   <?php include_once 'footer.php';?>
+   <?php include_once 'elements/footer.php';?>

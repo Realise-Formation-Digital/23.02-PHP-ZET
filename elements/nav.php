@@ -12,9 +12,9 @@
         <div class="collapse" id="navbar">
             <div class="p-4">
                 <div class="fs-4">
-                    <a href="#services" class="text-white">Services</a>
+                    <a href=".elements/index.php" class="text-white">Home</a>
                 </div>
-                <!--<div class="fs-4">
+                <div class="fs-4">
                     <a href="#works" class="text-white">Works</a>
                 </div>
                 <div class="fs-4">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="fs-4">
                     <a href="#pricing-table" class="text-white">Pricing Table</a>
-                </div>-->
+                </div>
                 <div class="fs-4">
                     <a href="#professional-team" class="text-white">Our Professional Team</a>
                 </div>

@@ -1,4 +1,4 @@
-<?php require_once 'doctyp.php'?>
+<?php require_once 'elements/doctyp.php'?>
 
 <body>
     
@@ -8,15 +8,15 @@
         <div class="col-2"><!-- spacer --></div>
         <!-- LOGO AVEC LIEN "HOME" -->
         <div class="col-4 mt-5 mb-5 text-start">
-          <a href="#home">
+          <a href="index.php">
             <img src="img/Header/logo.png" alt="home-logo" />
           </a>
         </div>
         <!-- MENU AVEC LE LIEN À DEFINIR OU FENETRE A DEFINIR -->
 
-        <?php require_once 'nav.php'?>
+        <?php require_once 'elements/nav.php'?>
 
-     <?php  /* include_once 'textheader.php' */ ?>
+     <?php  /* include_once '.elements/textheader.php' */ ?>
         
     </header>
       
