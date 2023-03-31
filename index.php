@@ -1,13 +1,9 @@
-<?php 
+<?php session_start();
 
-session_start();
+require './elements/header.php';  ?>
 
-require './elements/header.php'; 
-?>
 
-    <!-- Felicien section -->
-    <!-- Section Services-->
-    <section id="services" class="container-fluid p-8">
+<section id="services" class="container-fluid p-8">
       <h3 class="text-center mt-3 fw-bolder">SERVICES</h3>
       <div class="text-center">
         Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
@@ -692,4 +688,4 @@ require './elements/header.php';
       </div>
     </div>
 
-   <?php require './elements/footer.php';?>
+   <?php require 'footer.php';?>
