@@ -1,4 +1,12 @@
-<?php include_once 'header.php'; ?>
+<?php 
+session_start();
+
+if(!isset($_SESSION['name']))
+{
+  $_SESSION['name'] = "";
+}
+require './elements/header.php';
+?>
 
 
 <section id="services" class="container-fluid p-8">
@@ -686,5 +694,4 @@
       </div>
     </div>
 
-
-   <?php include_once 'footer.php';?>
+   <?php require './elements/footer.php';?>

@@ -12,17 +12,14 @@
         <div class="collapse" id="navbar">
             <div class="p-4">
                 <div class="fs-4">
-                    <a href="#services" class="text-white">Services</a>
-                </div>
-                <!--<div class="fs-4">
-                    <a href="#works" class="text-white">Works</a>
+                    <a href="index.php" class="text-white">Home</a>
                 </div>
                 <div class="fs-4">
                     <a href="#section-happy-clients" class="text-white">Happy Clients</a>
                 </div>
                 <div class="fs-4">
                     <a href="#pricing-table" class="text-white">Pricing Table</a>
-                </div>-->
+                </div>
                 <div class="fs-4">
                     <a href="#professional-team" class="text-white">Our Professional Team</a>
                 </div>
@@ -30,11 +27,19 @@
                     <a href="contact.php" class="text-white">Contact</a>
                 </div>
                 <div class="fs-4">
-                    <a href="login.php" class="text-white">Login</a>
-                </div>
-                <div class="fs-4">
                     <a href="sign.php" class="text-white">Inscription</a>
                 </div>
+                <div class="fs-4">
+                    <a href="login.php" class="text-white">Login</a>
+                </div>
+                <?php if($_SESSION['name']): ?>
+                    <div class="fs-4">
+                        <a href="logout.php" class="text-white">Logout</a>
+                    </div>
+                    <div class="fs-4">
+                        <a href="messagePage.php" class="text-white">Page privée</a>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
 </nav>
