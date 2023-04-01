@@ -1,8 +1,12 @@
 <?php
-
 session_start();
-
 require './logic/logicMessage.php';
+
+if($_SESSION['connect'] !== 1)
+{
+    header('Location: error.php');
+    exit;
+}
 require './elements/header.php'; 
 
 ?>
