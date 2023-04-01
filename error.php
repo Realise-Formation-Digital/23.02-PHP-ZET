@@ -4,7 +4,7 @@ require './elements/header.php';
 
 ?>
 <section>
-    <div class="container d-flex justify-content-center align-items-center">
+    <div class="container d-flex justify-content-center align-items-center flex-column">
         <h1 class="alert alert-danger">
             Forbidden 403
         </h1>
