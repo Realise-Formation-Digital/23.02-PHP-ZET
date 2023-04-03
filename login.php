@@ -5,9 +5,9 @@ session_start();
 require './logic/logicLogin.php';
 
 
-if($_SESSION['connec'] !== 1)
+if($_SESSION['connect'] !== 1)
 {
-    header('Location: error.php')
+    header('Location: error.php');
 }
 
 require './elements/header.php';
