@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['connect'] === false)
+if($_SESSION['connect'] !== true)
 {
     header('Location: error.php');
     exit;
