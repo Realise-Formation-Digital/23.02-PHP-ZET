@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require './elements/header.php'; 
 
 ?>
