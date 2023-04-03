@@ -9,7 +9,7 @@ if(!empty($_POST))
     // attribution des valeurs au variable déclaré.
     $name = checkInput($_POST['name']);
     $password = checkInput($_POST['password']);
-    $connect = 0;
+    $connect = false;
     $success = true;
 
     // si pas de name on arrete et on envoi un message d'erreur
@@ -37,7 +37,7 @@ if(!empty($_POST))
                 //si un mot de passe coorespond et un utilisateur je stocke dans session le nom et j'ouvre la page privée
                 if (password_verify($password, $data[1]) && $name === $data[0]) 
                 {
-                    $connect = 1;
+                    $connect = true;
                     $_SESSION['name'] = $name;
                     $_SESSION['connect'] = $connect;
                     header('Location: messagePage.php');
