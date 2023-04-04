@@ -1,12 +1,13 @@
 <?php
 session_start();
-if($_SESSION['connect'] !== true)
+require './logic/logicMessage.php';
+
+if($_SESSION['connect'] !== 1)
 {
-    header('Location: error.php');
+    header('Location: ./error.php');
     exit;
 }
 
-require './logic/logicMessage.php';
 
 require './elements/header.php'; 
 
